@@ -1,1 +1,47 @@
 @import "./base/reset.css";
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-form input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.photo-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photo-card img {
+    width: 100%;
+    display: block;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.load-more {
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
