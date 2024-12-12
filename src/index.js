@@ -1,8 +1,10 @@
-import app from './app.js';
+import App from './app.js';
 
 const form = document.getElementById('search-form');
 const list = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
+
+const app = new App();
 
 form.addEventListener('submit', onFormSubmit);
 loadMoreBtn.addEventListener('click', onBtnClick);
